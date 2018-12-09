@@ -84,7 +84,10 @@ public class DataUtils {
 
     }
 
-
+    /**
+     * 导航页数据源
+     * @return
+     */
     public static List<operators> getOperatorsData() {
         List<operators> lists = new ArrayList<>();
         lists.add(new operators(0l, "RxJava 2.x", 0l));
@@ -126,6 +129,7 @@ public class DataUtils {
         return alloperatorses;
     }
 
+//    内容页的数据源
     private static void getRxJava2List(List<alloperators> alloperatorses) {
         alloperatorses.add(new alloperators(i++, "RxJava2.x有什么不同", " ", "RxJava2.x与RxJava1.x的区别", CommonString.SPLASH_INDEX_URL, OperatorsUrl.R_2_INDEX, parentId));
         alloperatorses.add(new alloperators(i++, "Flowable", " ", "Flowable操作符的使用", CommonString.SPLASH_INDEX_URL, OperatorsUrl.R_2_FLOWABLE, parentId));
